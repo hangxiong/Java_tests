@@ -9,7 +9,7 @@ $ontext
    GAMS file :  FIT_STRAT.GMS
 
    @purpose :  Calculate gross margin for reference scenarios that an be implemented in an ABM
-   @author :  Böcker, T.
+   @author :  Bï¿½cker, T.
    @date :   28. March 2017
    @since :
    @refDoc :
@@ -349,10 +349,10 @@ p_cropPrice    "Price of silage maize Euro/dt" /4.3784/
      p_gm(gn,spre,spost)                         "possibility matrix of gross margin for municipality gn for strategy combinations spre and spost"
      p_interest                                     "interest rate" /0.01/
      p_lime                                         "amount of lime per ha" /3000/
-     p_manure                                       "amount of manure on field in m³" /25/
+     p_manure                                       "amount of manure on field in mï¿½" /25/
      p_manurePrice                                  "price of manure, assumption" /0/
      p_MinProfitShare                               "share of minimum wage" /1/
-     p_NPKcont (s_NPK)                              "average NPK content in biogas slurry in kg/m³"
+     p_NPKcont (s_NPK)                              "average NPK content in biogas slurry in kg/mï¿½"
                            /N  5.1, P  2.3, K  5.5 /
      p_NPKprice (s_fert)                            "price for fertiliser"
                            /N  1.10,P  0.87,K  0.77,Ca 0.05 /
@@ -402,7 +402,7 @@ p_cropPrice    "Price of silage maize Euro/dt" /4.3784/
      workmanure        0.89                55.13
      workliming        0.19                12.47
    ;
-* --- workmanure: 20m³ poly-tanker with 18m drag-hoses, 25m³/ha: KTBL 2016/17, p. 175
+* --- workmanure: 20mï¿½ poly-tanker with 18m drag-hoses, 25mï¿½/ha: KTBL 2016/17, p. 175
 * --- worksowing: 8 rows, 6 m width: KTBL 2016/17, p. 185
 
    table p_DieselUse(spre,s_dieselUseSoilDep)
