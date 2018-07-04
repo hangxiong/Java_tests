@@ -338,7 +338,7 @@ gn_inAnalysis =10000000
      p_costsVar(gn,spre,spost)                   "total variable costs dependend on weed control strategy"
      p_costsFix(gn,spre,spost)                   "total fixed costs dependend on weed control strategy"
      p_costsInterest(gn,spre,spost)              "Interest claim"
-p_cropPrice    "Price of silage maize €/dt" /4.3784/
+p_cropPrice    "Price of silage maize Euro/dt" /4.3784/
      p_dieselprice                                  "price of diesel - only for calculation of soil type-related costs of cultivation (source: KTBL 2016/17, p. 67)" /0.70/
      p_fertNneed(gn,spre,spost)                  "necessary N-fertiliser"
      p_fertPneed(gn,spre,spost)                  "necessary P-fertiliser"

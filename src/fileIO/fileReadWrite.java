@@ -28,7 +28,7 @@ public class fileReadWrite {
              // Modify price
                 if (line.contains("Price of silage maize"))
                 {
-                    line = String.format("p_cropPrice    \"Price of silage maize €/dt\" /%.4f/", 4.3784);
+                    line = String.format("p_cropPrice    \"Price of silage maize Euro/dt\" /%.4f/", 4.3784);
                     System.out.println(line);
                 }
                 // Modify year number (two lines concerned)
