@@ -1,0 +1,37 @@
+% This file provides a template to format JASSS articles v.0.5, 2015-03-24
+
+% In order to be compiled, the following packages should be installed in your system:
+% graphicx,xcolor, booktabs,amsmath, ifthen, geometry, authblk, natbib, endnotes
+ 
+ % Please use pdflatex
+
+% The font used is Source Sans Pro, normally included in Tex Live and other  major LaTeX distributions
+% Location at CTAN: http://www.ctan.org/tex-archive/fonts/sourcesanspro/
+% See also: http://www.tug.dk/FontCatalogue/sourcesanspro/
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{JASSS}
+\usepackage{tabularx}
+		
+\graphicspath{{Graphs/}}
+\newcommand{\argmin}[1]{\underset{#1}{\operatorname{arg}\,\operatorname{min}}\;}	
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Editorial fields (to be set in case of publication)	
+% Please leave this section untouched
+%\doinum{10.18564/jasss.xxxx}
+%\volume{xx}
+%\issue{x}
+%\article{x}
+%\pubyear{20xx}
+%\received{dd-mmm-yyyy}
+%\accepted{dd-mmm-yyyy}
+%\published{dd-mmm-yyyy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% title, authors and affiliations	
+
+\title{Identifying Mechanisms Underlying Peer Effects on Multiplex Networks}
