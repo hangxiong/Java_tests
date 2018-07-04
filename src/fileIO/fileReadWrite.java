@@ -4,9 +4,8 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
-import javafx.util.Pair;
-
+import java.util.HashMap;
+import java.util.Map;
 
 public class fileReadWrite {
 		
@@ -17,32 +16,18 @@ public class fileReadWrite {
 		
 		String Line;
 		ArrayList<String> yearPrice;
-		BufferedReader Buffer = null;
-		//Pair <String, Double> year_pricePair;
-		List<Pair<String, Double>> year_pricePairList;
-		
-		Map<String, Integer> words = new HashMap<>();
-		words.put("hello", 3);
-		words.put("world", 4);
-		words.computeIfPresent("hello", (k, v) -> v + 1);
-		System.out.println(words.get("hello"));
+		BufferedReader Buffer = null;		
+		Map<String, Double> year_priceMap = new HashMap<>();
 		
 		try {
- 									   // read input file
+ 			// read input file
 			Buffer = new BufferedReader(new FileReader(MPspecificInputFile));
 			Line = Buffer.readLine();									       // first line with titles to throw away
-			//Pair <String, Double> year_pricePair = new Pair <String, Double>("", (double) 0);
-			//List<Pair<String, Double>> year_pricePairList = new ArrayList<Pair<String, Double>>();
 			while ((Line = Buffer.readLine()) != null) { 
 				yearPrice = CSVtoArrayList(Line);						   // Read farm's parameters line by line
-				//year_pricePairList.(yearPrice.get(0), yearPrice.get(1));
-				Pair<String, Double> year_pricePair = new Pair<String, Double>(yearPrice.get(0), yearPrice.get(1));
-				//year_pricePair = new Pair<String, Double>(yearPrice.get(0), yearPrice.get(1));
-				System.out.println(yearPrice);
-				System.out.println(yearPrice.get(0));
-				System.out.println(yearPrice.get(1));
-				System.out.println("\n");
+				year_priceMap.put(yearPrice.get(0), Double.parseDouble(yearPrice.get(1)));
 			}
+			System.out.println(year_priceMap);
 		
 		} catch (IOException e) {
 			e.printStackTrace();
